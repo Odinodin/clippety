@@ -3,12 +3,8 @@
 
 (enable-console-print!)
 
-
 (defn ^:after-load render-on-reload []
-  (prn "RELAODED")
+  (prn "Reloaded")
   (app/render))
-
-
-(prn "Debbing")
 
 (defonce started (do (app/render) true))
