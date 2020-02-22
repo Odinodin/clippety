@@ -1,6 +1,5 @@
 (ns clippety.core
-  (:require [dumdom.core :as dumdom :refer [defcomponent]]
-            [garden.core :refer [css]]))
+  (:require [dumdom.core :as dumdom :refer [defcomponent]]))
 
 (defn to-css [rules]
   (->> rules (map
